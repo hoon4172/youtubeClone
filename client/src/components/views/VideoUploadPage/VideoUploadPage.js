@@ -26,15 +26,19 @@ function VideoUploadPage() {
   const onTitleChange = (e) => {
     setVideoTitle(e.currentTarget.value);
   };
+
   const onDescriptionChange = (e) => {
     setDescription(e.currentTarget.value);
   };
+
   const onPrivateChange = (e) => {
     setPrivate(e.currentTarget.value);
   };
+
   const onCategoryChange = (e) => {
     setCategory(e.currentTarget.value);
   };
+
   const onDrop = (files) => {
     let formData = new FormData();
     const config = {
